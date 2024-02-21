@@ -13,7 +13,7 @@
 
     <div id="app">
 
-        <ul>
+        <ul v-if="emails.length === 10">
             <li v-for="(mail, index) in emails">{{ mail.response }}</li>
         </ul>
 
